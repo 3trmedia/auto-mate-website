@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-am-dark: #080A0F;
-  --color-am-mid: #0F1117;
-  --color-am-surface: #161B25;
-  --color-am-card: #1C2230;
-  --color-am-border: #252B3A;
-  --color-am-blue: #4F8EF7;
-  --color-am-blue-dark: #2F6FDF;
-  --color-am-blue-dim: rgba(79, 142, 247, 0.12);
-  --color-am-text: #EEF0F5;
-  --color-am-muted: #7C8399;
-  --color-am-subtle: #4A5168;
-  --color-am-white: #FFFFFF;
+  --color-am-dark: #111111;
+  --color-am-mid: #181818;
+  --color-am-surface: #1F1F1F;
+  --color-am-card: #252525;
+  --color-am-border: #2E2E2E;
+  --color-am-blue: #C94E28;
+  --color-am-blue-dark: #A83D1E;
+  --color-am-blue-dim: rgba(201, 78, 40, 0.12);
+  --color-am-text: #EDE9E6;
+  --color-am-muted: #857F7B;
+  --color-am-subtle: #555050;
+  --color-am-white: #F5F2EF;
 
   --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -259,8 +259,8 @@ img {
 }
 
 .card:hover {
-  border-color: rgba(79, 142, 247, 0.35);
-  box-shadow: 0 0 24px rgba(79, 142, 247, 0.08);
+  border-color: rgba(201, 78, 40, 0.35);
+  box-shadow: 0 0 24px rgba(201, 78, 40, 0.08);
 }
 
 /* Primary button */
@@ -312,7 +312,7 @@ img {
   width: 48px;
   height: 48px;
   background: var(--color-am-blue-dim);
-  border: 1px solid rgba(79, 142, 247, 0.2);
+  border: 1px solid rgba(201, 78, 40, 0.2);
   border-radius: 10px;
   display: flex;
   align-items: center;
