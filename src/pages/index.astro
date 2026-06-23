@@ -1,0 +1,357 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Auto-Mate | AI Automation for Service Businesses"
+  description="Auto-Mate builds custom AI systems that eliminate repetitive work for service-based businesses doing $500K to $5M. Respond to leads in seconds, automate follow-up, and scale without adding headcount."
+  currentPage="/"
+>
+
+  <!-- HERO -->
+  <section style="
+    min-height: calc(100vh - 68px);
+    display: flex;
+    align-items: center;
+    background: var(--color-am-dark);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0 60px;
+  ">
+    <div style="
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 600px;
+      background: radial-gradient(ellipse at center, rgba(79, 142, 247, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    "></div>
+
+    <div class="container" style="position: relative; z-index: 1;">
+      <div style="max-width: 760px;">
+        <div class="eyebrow">AI Automation for Service Businesses</div>
+
+        <h1 style="
+          font-size: clamp(2.6rem, 6vw, 4.2rem);
+          font-weight: 700;
+          letter-spacing: -0.04em;
+          line-height: 1.08;
+          color: var(--color-am-white);
+          margin-bottom: 28px;
+        ">
+          AI is not a chatbot.<br />
+          <span style="color: var(--color-am-blue);">It is a force multiplier.</span>
+        </h1>
+
+        <p style="
+          font-size: 1.2rem;
+          color: var(--color-am-muted);
+          line-height: 1.75;
+          max-width: 580px;
+          margin-bottom: 44px;
+        ">
+          We build custom automation systems that handle the work eating your time. Faster lead response, hands-free follow-up, smarter reporting. All without adding a single employee.
+        </p>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+          <a href="/contact" class="btn-primary">
+            Book a Free AI Audit
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="/services" class="btn-ghost">See What We Build</a>
+        </div>
+
+        <p style="margin-top: 40px; font-size: 0.85rem; color: var(--color-am-subtle);">
+          45-minute audit. No commitment. Custom-scoped to your specific business.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS -->
+  <section class="section" style="background: var(--color-am-mid);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 64px;">
+        <div class="eyebrow">Sound Familiar?</div>
+        <h2 class="section-heading">You are running a real business,<br />not a software company.</h2>
+        <p class="section-subheading" style="margin: 0 auto;">
+          Your team is doing things manually that a well-built system could handle in seconds. Here is what we see most often.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+
+        <div class="card">
+          <div class="icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-am-blue)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 10px;">Leads going cold</h3>
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">Someone fills out your form at 10pm. You see it the next morning. By then, they have already called your competitor. Responding within 5 minutes increases close rates by 80%.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-am-blue)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 10px;">Follow-up falls through</h3>
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">Most sales take 5 or more touchpoints. Most businesses stop at one or two. Not because they do not want to follow up, but because there is no system making it happen automatically.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-am-blue)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 10px;">Manual data entry eating hours</h3>
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">Someone on your team is manually moving information between systems. Copying invoices. Re-entering form data. Filing documents by hand. That is not work. That is expensive busywork.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-am-blue)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 10px;">No visibility into the business</h3>
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">You are making decisions based on gut feel because pulling reports takes too long. Your numbers live in five different places and nobody has time to pull them together.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-am-blue)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 10px;">Revenue left in old contacts</h3>
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">Your database is full of past leads and old customers who went quiet. A well-timed reactivation sequence can recover significant revenue from contacts you already paid to acquire.</p>
+        </div>
+
+        <div class="card" style="border-color: rgba(79, 142, 247, 0.25); background: var(--color-am-blue-dim);">
+          <h3 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 12px; color: var(--color-am-blue);">We fix all of this.</h3>
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7; margin-bottom: 20px;">No software subscriptions. No complicated dashboards to learn. Custom-built systems that run in the background while you run your business.</p>
+          <a href="/contact" class="btn-primary" style="font-size: 0.875rem; padding: 11px 22px;">Start with a Free Audit</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="section" style="background: var(--color-am-dark);">
+    <div class="container">
+      <div style="max-width: 600px; margin-bottom: 64px;">
+        <div class="eyebrow">What We Build</div>
+        <h2 class="section-heading">Five systems that change<br />how your business operates</h2>
+        <p class="section-subheading">Every system is built specifically for your business. No templates. No generic software. Built to plug into what you already use.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+
+        <div class="card" style="border-radius: 12px 12px 2px 2px; display: flex; gap: 32px; align-items: flex-start;">
+          <div style="min-width: 48px;">
+            <div class="icon-box" style="margin-bottom: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-am-blue)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 8px;">Speed to Lead</h3>
+            <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">Respond to new leads automatically within seconds of them filling out a form or making a call. The system qualifies them, sends a personalized message, and routes them to your calendar. You close more deals without lifting a finger.</p>
+          </div>
+        </div>
+
+        <div class="card" style="border-radius: 2px; display: flex; gap: 32px; align-items: flex-start;">
+          <div style="min-width: 48px;">
+            <div class="icon-box" style="margin-bottom: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-am-blue)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 8px;">Follow-Up and Nurture Sequences</h3>
+            <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">Automated multi-step follow-up that keeps prospects warm until they are ready to buy. Custom messaging, smart timing, and behavior-based triggers. Every contact gets the right message at the right moment, every time.</p>
+          </div>
+        </div>
+
+        <div class="card" style="border-radius: 2px; display: flex; gap: 32px; align-items: flex-start;">
+          <div style="min-width: 48px;">
+            <div class="icon-box" style="margin-bottom: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-am-blue)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 8px;">Document Processing</h3>
+            <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">Invoices, intake forms, contracts, receipts. The system reads them, extracts the data, routes it to the right place, and files it. What used to take an hour of data entry now happens instantly and without errors.</p>
+          </div>
+        </div>
+
+        <div class="card" style="border-radius: 2px; display: flex; gap: 32px; align-items: flex-start;">
+          <div style="min-width: 48px;">
+            <div class="icon-box" style="margin-bottom: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-am-blue)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 8px;">Database Reactivation</h3>
+            <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">You have contacts in your database who went quiet. A targeted reactivation campaign re-engages them with the right message. Many businesses recover significant revenue from leads they already paid to acquire.</p>
+          </div>
+        </div>
+
+        <div class="card" style="border-radius: 2px 2px 12px 12px; display: flex; gap: 32px; align-items: flex-start;">
+          <div style="min-width: 48px;">
+            <div class="icon-box" style="margin-bottom: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-am-blue)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 8px;">Internal Reporting and Dashboards</h3>
+            <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">Automated reports pulled from your existing tools and delivered to you on a schedule. No more logging into five platforms. See the numbers that matter, when you need them, in a format you can actually use.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="/services" class="btn-ghost">View Full Service Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" style="background: var(--color-am-mid);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 64px;">
+        <div class="eyebrow">The Process</div>
+        <h2 class="section-heading">Three steps from idea to running system</h2>
+        <p class="section-subheading" style="margin: 0 auto;">We do not sell you software. We build you a system that actually runs your operation.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; max-width: 900px; margin: 0 auto;">
+
+        <div style="text-align: center;">
+          <div style="width: 64px; height: 64px; background: var(--color-am-blue-dim); border: 1px solid rgba(79, 142, 247, 0.25); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--color-am-blue);">1</div>
+          <h3 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 12px;">Free AI Audit</h3>
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">45 minutes. We map out your current workflow, identify the biggest time and revenue leaks, and show you exactly where automation would have the highest impact. No commitment required.</p>
+        </div>
+
+        <div style="text-align: center;">
+          <div style="width: 64px; height: 64px; background: var(--color-am-blue-dim); border: 1px solid rgba(79, 142, 247, 0.25); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--color-am-blue);">2</div>
+          <h3 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 12px;">Custom Build</h3>
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">We scope a solution built specifically for your business and your existing tools. Most builds are complete in 2 to 4 weeks. You will not need to learn anything new. The system works inside what you already use.</p>
+        </div>
+
+        <div style="text-align: center;">
+          <div style="width: 64px; height: 64px; background: var(--color-am-blue-dim); border: 1px solid rgba(79, 142, 247, 0.25); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--color-am-blue);">3</div>
+          <h3 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 12px;">Ongoing Support</h3>
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">Your business changes. Your systems should too. We stay on as your automation partner, maintaining what is built and adding new systems as you grow. Most clients save 10 to 30 hours every single week.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section-sm" style="background: var(--color-am-dark);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 48px; text-align: center; max-width: 800px; margin: 0 auto;">
+        <div>
+          <div style="font-family: var(--font-display); font-size: 3rem; font-weight: 700; color: var(--color-am-blue); line-height: 1; margin-bottom: 8px;">10-30</div>
+          <div style="font-size: 0.9rem; color: var(--color-am-muted);">Hours saved per client, per week</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-display); font-size: 3rem; font-weight: 700; color: var(--color-am-blue); line-height: 1; margin-bottom: 8px;">2-4</div>
+          <div style="font-size: 0.9rem; color: var(--color-am-muted);">Weeks average build time</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-display); font-size: 3rem; font-weight: 700; color: var(--color-am-blue); line-height: 1; margin-bottom: 8px;">80%</div>
+          <div style="font-size: 0.9rem; color: var(--color-am-muted);">Higher close rate with fast lead response</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-display); font-size: 3rem; font-weight: 700; color: var(--color-am-blue); line-height: 1; margin-bottom: 8px;">100%</div>
+          <div style="font-size: 0.9rem; color: var(--color-am-muted);">Custom built. No templates, ever.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE WORK WITH -->
+  <section class="section" style="background: var(--color-am-mid);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;" class="who-grid">
+        <div>
+          <div class="eyebrow">Who We Work With</div>
+          <h2 class="section-heading">Built for businesses doing $500K to $5M</h2>
+          <p style="font-size: 1rem; color: var(--color-am-muted); line-height: 1.8; margin-bottom: 32px;">
+            You have proven your business model. You have a team. You have customers. What you do not have is a system that handles the operational work so you can focus on what actually grows the business.
+          </p>
+          <p style="font-size: 1rem; color: var(--color-am-muted); line-height: 1.8; margin-bottom: 36px;">
+            We work best with service-based businesses in home services, professional services, healthcare, and consulting, where manual processes are the biggest drag on growth.
+          </p>
+          <a href="/contact" class="btn-primary">See If You Are a Fit</a>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          {[
+            'You are spending more than 5 hours per week on data entry or manual tasks',
+            'Leads come in but the follow-up process is inconsistent',
+            'Your team is doing work that should be handled automatically',
+            'You want to grow revenue without growing your headcount',
+            'You have tried generic software solutions that never quite fit',
+          ].map(item => (
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <div style="width: 22px; height: 22px; background: var(--color-am-blue-dim); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M2 6l3 3 5-5" stroke="var(--color-am-blue)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <p style="font-size: 0.92rem; color: var(--color-am-muted); line-height: 1.65;">{item}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section style="background: linear-gradient(135deg, var(--color-am-surface) 0%, #0F1520 100%); border-top: 1px solid var(--color-am-border); border-bottom: 1px solid var(--color-am-border); padding: 80px 0;">
+    <div class="container" style="text-align: center; max-width: 680px; margin: 0 auto;">
+      <h2 style="font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 20px;">
+        Ready to find out what AI can<br />actually do for your business?
+      </h2>
+      <p style="font-size: 1.05rem; color: var(--color-am-muted); line-height: 1.75; margin-bottom: 36px;">
+        Book a free 45-minute AI audit. We will map out exactly where automation would have the biggest impact on your operation, and show you what a custom-built system would look like.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="/contact" class="btn-primary" style="font-size: 1rem; padding: 16px 32px;">
+          Book Your Free Audit
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="/services" class="btn-ghost" style="font-size: 1rem; padding: 15px 32px;">Learn More First</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  @media (max-width: 768px) {
+    .who-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>

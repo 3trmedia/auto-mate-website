@@ -1,0 +1,206 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const services = [
+  {
+    id: 'speed-to-lead',
+    icon: `<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>`,
+    title: 'Speed to Lead',
+    tagline: 'Respond in seconds, not hours.',
+    description: 'The single biggest lever in sales is response time. Studies show that responding to a new lead within 5 minutes increases your close rate by 80%. After 30 minutes, that advantage drops to nearly zero.',
+    bullets: [
+      'Automated response triggered the moment a lead fills out a form or calls in',
+      'Personalized messages that match what the lead asked about',
+      'Instant routing to your calendar for qualified prospects',
+      'Disqualified leads handled automatically so your time stays protected',
+      'Works across web forms, landing pages, phone calls, and ad platforms',
+    ],
+    result: 'Most clients see a measurable increase in booked calls within the first week of going live.',
+  },
+  {
+    id: 'follow-up',
+    icon: `<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>`,
+    title: 'Follow-Up and Nurture Sequences',
+    tagline: 'Stay top of mind without lifting a finger.',
+    description: 'Most deals close on the 5th, 6th, or 7th touchpoint. Most businesses give up after one or two. Not because they do not want to follow up, but because they have no system making it happen automatically.',
+    bullets: [
+      'Multi-step sequences that run for days, weeks, or months depending on your sales cycle',
+      'Behavior-based triggers that respond to what the prospect actually does',
+      'Emails, text messages, and task reminders all coordinated automatically',
+      'Sequences for new leads, warm prospects, and post-proposal follow-up',
+      'Re-engagement campaigns for leads who went cold',
+    ],
+    result: 'Clients regularly close deals they would have lost simply because the follow-up never stopped.',
+  },
+  {
+    id: 'document-processing',
+    icon: `<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>`,
+    title: 'Document Processing',
+    tagline: 'Eliminate data entry completely.',
+    description: 'If someone on your team is reading a document and then typing that information into a different system, that is a job for automation. Document processing eliminates the manual step entirely.',
+    bullets: [
+      'Invoices read, extracted, and filed automatically',
+      'Intake forms processed and routed to the right person or system',
+      'Contracts reviewed and key fields pulled into your CRM or database',
+      'Receipts, purchase orders, and statements handled without human involvement',
+      'Error alerts for anything that falls outside expected parameters',
+    ],
+    result: 'Most clients eliminate 3 to 8 hours per week of data entry work within the first month.',
+  },
+  {
+    id: 'database-reactivation',
+    icon: `<circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>`,
+    title: 'Database Reactivation',
+    tagline: 'Mine your existing contacts for revenue.',
+    description: 'Your contact database is one of the most underused assets in your business. Past leads, old customers, and inactive contacts all represent revenue you already paid to acquire. Reactivation brings them back.',
+    bullets: [
+      'Targeted campaign sent to dormant contacts with a relevant offer or check-in',
+      'Personalized messaging based on where each contact left off',
+      'Responses automatically routed back into your active sales process',
+      'Re-opt-in flows to keep your list clean and compliant',
+      'Ongoing nurture for contacts who respond but are not ready yet',
+    ],
+    result: 'A single well-executed reactivation campaign can generate significant revenue from contacts already in your system.',
+  },
+  {
+    id: 'reporting',
+    icon: `<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>`,
+    title: 'Internal Reporting and Dashboards',
+    tagline: 'See your whole business in one place.',
+    description: 'When your data lives in five different platforms, you stop checking it. Automated reporting pulls everything together and delivers the numbers you actually need, on a schedule that works for you.',
+    bullets: [
+      'Pulls data from your CRM, accounting software, scheduling tool, and more',
+      'Weekly or daily summary reports delivered by email or text',
+      'Real-time alerts when key metrics go outside expected ranges',
+      'Custom dashboards built around the KPIs that matter to your business',
+      'Team-level reporting so managers always know where things stand',
+    ],
+    result: 'Clients make better decisions faster because they finally have a single, accurate view of their operation.',
+  },
+];
+---
+
+<Layout
+  title="Services | Auto-Mate AI Automation"
+  description="Auto-Mate builds five core automation systems for service-based businesses: speed to lead, follow-up sequences, document processing, database reactivation, and internal reporting."
+  currentPage="/services"
+>
+
+  <!-- PAGE HERO -->
+  <section style="background: var(--color-am-dark); padding: 80px 0 64px; border-bottom: 1px solid var(--color-am-border);">
+    <div class="container">
+      <div class="eyebrow">What We Build</div>
+      <h1 class="section-heading" style="font-size: clamp(2.2rem, 5vw, 3.2rem); max-width: 640px; margin-bottom: 20px;">
+        Custom automation systems built for your business
+      </h1>
+      <p class="section-subheading">
+        Every system we build is scoped to your specific workflows, your existing tools, and your actual bottlenecks. Nothing off the shelf. Nothing generic.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICE DETAIL SECTIONS -->
+  {services.map((service, index) => (
+    <section
+      id={service.id}
+      class="section"
+      style={`background: ${index % 2 === 0 ? 'var(--color-am-mid)' : 'var(--color-am-dark)'};`}
+    >
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;" class="service-grid">
+
+          <div>
+            <div class="icon-box" style="margin-bottom: 20px;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-am-blue)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" set:html={service.icon} />
+            </div>
+            <div class="eyebrow">{`0${index + 1}`}</div>
+            <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 8px;">{service.title}</h2>
+            <p style="font-size: 1.1rem; color: var(--color-am-blue); font-weight: 500; margin-bottom: 24px;">{service.tagline}</p>
+            <p style="font-size: 1rem; color: var(--color-am-muted); line-height: 1.8;">{service.description}</p>
+          </div>
+
+          <div>
+            <div style="background: var(--color-am-card); border: 1px solid var(--color-am-border); border-radius: 12px; padding: 32px; margin-bottom: 24px;">
+              <p style="font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-am-subtle); margin-bottom: 20px;">What gets built</p>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px;">
+                {service.bullets.map(bullet => (
+                  <li style="display: flex; gap: 12px; align-items: flex-start;">
+                    <div style="width: 20px; height: 20px; background: var(--color-am-blue-dim); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+                      <svg width="11" height="11" viewBox="0 0 12 12" fill="none">
+                        <path d="M2 6l3 3 5-5" stroke="var(--color-am-blue)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.65;">{bullet}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div style="background: var(--color-am-blue-dim); border: 1px solid rgba(79, 142, 247, 0.2); border-radius: 10px; padding: 20px 24px;">
+              <p style="font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-am-blue); margin-bottom: 8px;">Typical result</p>
+              <p style="font-size: 0.92rem; color: var(--color-am-text); line-height: 1.7;">{service.result}</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- PRICING SECTION -->
+  <section class="section" style="background: var(--color-am-mid);">
+    <div class="container">
+      <div style="text-align: center; max-width: 620px; margin: 0 auto 56px;">
+        <div class="eyebrow">Pricing</div>
+        <h2 class="section-heading">Scoped to your specific situation</h2>
+        <p class="section-subheading" style="margin: 0 auto;">
+          We do not have a pricing page because we do not have fixed packages. Every business has different bottlenecks, different tools, and different revenue potential. Your investment is based on what we actually build.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto 48px;">
+
+        <div class="card" style="text-align: center;">
+          <div style="font-family: var(--font-display); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-am-subtle); margin-bottom: 16px;">The Audit</div>
+          <div style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--color-am-blue); margin-bottom: 4px;">Free</div>
+          <p style="font-size: 0.88rem; color: var(--color-am-muted); margin-bottom: 20px;">45 minutes, no commitment</p>
+          <hr class="divider" style="margin-bottom: 20px;" />
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">We map your workflow, identify the highest-value automation opportunities, and tell you exactly what we would build and what it would do for your business.</p>
+        </div>
+
+        <div class="card" style="text-align: center; border-color: rgba(79, 142, 247, 0.3);">
+          <div style="font-family: var(--font-display); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-am-blue); margin-bottom: 16px;">The Build</div>
+          <div style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--color-am-white); margin-bottom: 4px;">Custom</div>
+          <p style="font-size: 0.88rem; color: var(--color-am-muted); margin-bottom: 20px;">Scoped after the audit</p>
+          <hr class="divider" style="margin-bottom: 20px;" />
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">Priced based on the value of the bottleneck we are solving. Builds are typically delivered in 2 to 4 weeks. You do not pay for hours. You pay for outcomes.</p>
+        </div>
+
+        <div class="card" style="text-align: center;">
+          <div style="font-family: var(--font-display); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-am-subtle); margin-bottom: 16px;">Ongoing</div>
+          <div style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--color-am-white); margin-bottom: 4px;">Retainer</div>
+          <p style="font-size: 0.88rem; color: var(--color-am-muted); margin-bottom: 20px;">Monthly maintenance and growth</p>
+          <hr class="divider" style="margin-bottom: 20px;" />
+          <p style="font-size: 0.9rem; color: var(--color-am-muted); line-height: 1.7;">We maintain what is built, keep it running as your tools and processes evolve, and continue adding new systems as your business grows.</p>
+        </div>
+
+      </div>
+
+      <div style="text-align: center;">
+        <a href="/contact" class="btn-primary" style="font-size: 1rem; padding: 16px 32px;">
+          Start with a Free Audit
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  @media (max-width: 768px) {
+    .service-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
