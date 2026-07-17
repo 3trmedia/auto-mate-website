@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automate Utah | 24/7 Answering for Utah County Med Spas</title>
+<meta name="description" content="We answer every consultation request, confirm appointments so fewer slots go empty, and keep past clients coming back for their next treatment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="wordmark">Automate <span>Utah</span></a>
+    <nav class="nav-links-desktop">
+      <a href="index.html">Home</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-toggle">Industries
+          <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="pest-control.html">Pest Control</a>
+            <a href="med-spa.html">Med Spas</a>
+            <a href="window-cleaning.html">Window Cleaning</a>
+            <a href="real-estate.html">Real Estate</a>
+          </div>
+        </div>
+      </div>
+      <a href="#how">How It Works</a>
+      <a href="index.html#fit">Who It's For</a>
+      <a href="index.html#faq">Questions</a>
+      <a href="#apply" class="btn btn-primary" onclick="trackEvent('nav_cta_click', {location: 'nav'})">See If You Qualify</a>
+    </nav>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </div>
+  <div class="nav-mobile-panel">
+    <a href="index.html">Home</a>
+    <div class="nav-mobile-group-label">Industries</div>
+    <a href="pest-control.html">Pest Control</a>
+    <a href="med-spa.html">Med Spas</a>
+    <a href="window-cleaning.html">Window Cleaning</a>
+    <a href="real-estate.html">Real Estate</a>
+    <a href="#how">How It Works</a>
+    <a href="index.html#fit">Who It's For</a>
+    <a href="index.html#faq">Questions</a>
+    <a href="#apply" class="btn btn-primary" onclick="trackEvent('nav_cta_click', {location: 'nav_mobile'})">See If You Qualify</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <!-- PLACEHOLDER PHOTO: replace with real photo of a Utah County med spa consultation or front desk, warm light -->
+    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=80" alt="Med spa front desk in warm light">
+    <div class="hero-gradient"></div>
+  </div>
+  <div class="wrap industry-hero-inner">
+    <div class="hero-content fade-rise">
+      <h1 class="hero-eyebrow">24/7 Answering and Lead Capture Service for Utah County Med Spas</h1>
+      <h2>Every Call <span class="accent">Answered</span>. Every Quote <span class="accent">Chased</span>. Every Job <span class="accent">Booked</span>.</h2>
+      <p class="hero-sub">We answer every consultation request, confirm appointments so fewer slots go empty, and keep past clients coming back for their next treatment.</p>
+      <div class="hero-actions">
+        <a href="#apply" class="btn btn-primary" onclick="trackEvent('hero_cta_click', {button: 'see_if_you_qualify', page: 'med_spa'})">See If You Qualify</a>
+        <a href="#pain" class="btn btn-ghost" onclick="trackEvent('hero_cta_click', {button: 'find_missed_revenue', page: 'med_spa'})">Find Your Missed Revenue</a>
+      </div>
+      <p class="hero-note">Applications reviewed within 1 business day. Limited founding spots. Built for Utah County service businesses.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN POINTS -->
+<section id="pain" class="section-white">
+  <div class="wrap">
+    <div class="section-head fade-rise">
+      <span class="eyebrow">The Problem</span>
+      <h2>Where med spas lose bookings</h2>
+      <p>You're not short on demand. You're losing bookings in the gaps between the inquiry, the consult, and the follow-up.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card card-tagged fade-rise">
+        <div class="card-tag">Consultation Requests</div>
+        <h3>Inquiries go cold</h3>
+        <p>Instagram DMs and website inquiries about Botox, fillers, and laser treatments sit unanswered for hours.</p>
+      </div>
+      <div class="card card-tagged fade-rise">
+        <div class="card-tag">No-Shows</div>
+        <h3>The schedule drains itself</h3>
+        <p>Without confirmation texts and reminder follow-up, booked slots go empty and revenue walks out the door.</p>
+      </div>
+      <div class="card card-tagged fade-rise">
+        <div class="card-tag">Past Clients</div>
+        <h3>New treatments go unmentioned</h3>
+        <p>Your client list doesn't get re-engaged when you add new services or run a promotion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE HANDLE -->
+<section id="front-desk" class="section-cream">
+  <div class="wrap handle-layout">
+    <div class="handle-photo-wrap fade-rise">
+      <div class="handle-photo">
+        <!-- TEMP PLACEHOLDER PHOTO: replace with a real photo of the Automate Utah front desk / lead response in action -->
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=80" alt="Front desk response in action">
+      </div>
+      <div class="handle-badge">
+        <div class="handle-badge-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+        <div class="handle-badge-num">&lt;60 sec</div>
+        <div class="handle-badge-label">Average Response Time</div>
+      </div>
+    </div>
+    <div class="handle-content fade-rise">
+      <span class="eyebrow">What We Handle</span>
+      <h2>We run your front desk so you can run your business</h2>
+      <p class="handle-intro">This is the hire you keep meaning to make. We just make it happen faster, and it never calls in sick.</p>
+      <div class="handle-checklist">
+        <div class="handle-check-item">
+          <div class="handle-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div>
+            <h3>Instant Lead Response</h3>
+            <p>Answers every call, text, and form in under 60 seconds. Filters real leads and books them onto your calendar.</p>
+          </div>
+        </div>
+        <div class="handle-check-item">
+          <div class="handle-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div>
+            <h3>Lead Follow-Up</h3>
+            <p>Follows up by text and email until they book or say no. No quote goes silent again.</p>
+          </div>
+        </div>
+        <div class="handle-check-item">
+          <div class="handle-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div>
+            <h3>Past Customer Outreach</h3>
+            <p>Reaches out to your past customer list and brings back revenue you already paid to acquire once.</p>
+          </div>
+        </div>
+        <div class="handle-check-item">
+          <div class="handle-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+          <div>
+            <h3>Review &amp; Referral Requests</h3>
+            <p>Asks happy customers for reviews at exactly the right moment, and routes referrals your way.</p>
+          </div>
+        </div>
+      </div>
+      <div class="handle-cta-row">
+        <p class="handle-cta-text"><strong>The Command Center:</strong> one simple dashboard showing every lead, every response time, and the revenue recovered so far.</p>
+        <a href="#apply" class="btn btn-primary" onclick="trackEvent('front_desk_cta_click', {card: 'command_center', page: 'med_spa'})">See If You Qualify</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section-white">
+  <div class="wrap">
+    <div class="section-head fade-rise">
+      <span class="eyebrow">The Process</span>
+      <h2>How it works</h2>
+      <p>No demos, no long sales calls. Just a straight look at where you're losing revenue.</p>
+    </div>
+    <div class="grid-3">
+      <div class="step-card fade-rise">
+        <div class="step-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="2" width="12" height="20" rx="2"></rect><line x1="9" y1="18" x2="15" y2="18"></line><path d="M9 7h6M9 10h6M9 13h4"></path></svg>
+          <div class="step-num">1</div>
+        </div>
+        <div class="step-body">
+          <h3>Apply in 60 seconds</h3>
+          <p>Tell us where you're losing the most: missed calls, dead quotes, or an untouched customer list.</p>
+        </div>
+      </div>
+      <div class="step-card fade-rise">
+        <div class="step-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 12a3 3 0 100-6 3 3 0 000 6zM16 12a3 3 0 100-6 3 3 0 000 6z"></path><path d="M2 20c0-3 3-5 6-5s6 2 6 5M10 20c0-3 3-5 6-5s6 2 6 5"></path></svg>
+          <div class="step-num">2</div>
+        </div>
+        <div class="step-body">
+          <h3>We review and reach out</h3>
+          <p>Every application gets a real look. If it's a fit, Kaden reaches out within 1 business day.</p>
+        </div>
+      </div>
+      <div class="step-card fade-rise">
+        <div class="step-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="17" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="16" y1="2" x2="16" y2="6"></line><path d="M7 13h3M7 17h3M14 13h3M14 17h3"></path></svg>
+          <div class="step-num">3</div>
+        </div>
+        <div class="step-body">
+          <h3>Your phone starts booking itself</h3>
+          <p>We build your system at founding rates and use your results as a case study going forward.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section id="apply" class="section-cream">
+  <div class="wrap">
+    <div class="apply-box fade-rise">
+      <div class="section-head" style="margin-bottom: 24px;">
+        <span class="eyebrow">Apply Now</span>
+        <h2 style="font-size: 28px;">Apply to be a founding client</h2>
+        <p>60 seconds. No pitch, no commitment. If it's a fit, Kaden reaches out within 1 business day.</p>
+      </div>
+      <form id="apply-form" data-source="Med Spa Landing Page" onsubmit="handleApplySubmit(event)">
+        <div class="form-field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-field">
+          <label for="industry">Industry</label>
+          <select id="industry" name="industry" required>
+            <option value="pest-control">Pest Control</option>
+            <option value="med-spa" selected>Med Spa</option>
+            <option value="window-cleaning">Window Cleaning</option>
+            <option value="real-estate">Real Estate</option>
+            <option value="home-services">Home Services</option>
+            <option value="other">Other Service Business</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Continue</button>
+      </form>
+      <p class="apply-note">Applications reviewed within 1 business day &middot; Utah County</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="wordmark">Automate <span>Utah</span></div>
+        <p class="footer-desc">Answering and lead capture for Utah County service businesses. Every call answered, every quote chased, every job booked.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="pest-control.html">Pest Control</a></li>
+          <li><a href="med-spa.html">Med Spas</a></li>
+          <li><a href="window-cleaning.html">Window Cleaning</a></li>
+          <li><a href="real-estate.html">Real Estate Teams</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#front-desk">What We Handle</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="index.html#fit">Who It's For</a></li>
+          <li><a href="index.html#faq">Questions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:kaden@automateutah.com">kaden@automateutah.com</a></li>
+          <li><a href="tel:+18014583118">(801) 458-3118</a></li>
+          <li>Orem, UT</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-legal-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <span>&middot;</span>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+      &copy; 2026 Automate Utah. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
