@@ -428,22 +428,28 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 56px;
-    align-items: center;
+    align-items: stretch;
   }
 
   @media (min-width: 900px) {
-    .handle-layout { grid-template-columns: 0.85fr 1.15fr; }
+    .handle-layout { grid-template-columns: 1fr 1.1fr; }
   }
 
   .handle-photo-wrap {
     position: relative;
+    height: 100%;
   }
 
   .handle-photo {
+    height: 100%;
+    min-height: 460px;
     border-radius: 24px;
     overflow: hidden;
-    aspect-ratio: 4 / 3;
     box-shadow: 0 24px 48px rgba(35, 32, 28, 0.16);
+  }
+
+  @media (max-width: 899px) {
+    .handle-photo { height: auto; min-height: 0; aspect-ratio: 4 / 3; }
   }
 
   .handle-photo img { width: 100%; height: 100%; object-fit: cover; }
@@ -1118,28 +1124,28 @@
         <div class="handle-check-item">
           <div class="handle-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div>
-            <h3>The First Responder</h3>
+            <h3>Instant Lead Response</h3>
             <p>Answers every call, text, and form in under 60 seconds. Filters real leads and books them onto your calendar.</p>
           </div>
         </div>
         <div class="handle-check-item">
           <div class="handle-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div>
-            <h3>The Cultivator</h3>
+            <h3>Lead Follow-Up</h3>
             <p>Follows up by text and email until they book or say no. No quote goes silent again.</p>
           </div>
         </div>
         <div class="handle-check-item">
           <div class="handle-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div>
-            <h3>The Reactivator</h3>
+            <h3>Past Customer Outreach</h3>
             <p>Reaches out to your past customer list and brings back revenue you already paid to acquire once.</p>
           </div>
         </div>
         <div class="handle-check-item">
           <div class="handle-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
           <div>
-            <h3>The Reputation Builder</h3>
+            <h3>Review &amp; Referral Requests</h3>
             <p>Asks happy customers for reviews at exactly the right moment, and routes referrals your way.</p>
           </div>
         </div>
