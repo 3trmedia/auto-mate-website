@@ -33,6 +33,28 @@ function handleApplySubmit(event) {
   window.location.href = mailtoLink;
 }
 
+function handleContactSubmit(event) {
+  event.preventDefault();
+  var form = event.target;
+  var name = form.name.value;
+  var email = form.email.value;
+  var message = form.message.value;
+
+  trackEvent('contact_form_submit', {});
+
+  var subject = encodeURIComponent('New Automate Utah Contact Form Message');
+  var body = encodeURIComponent(
+    'Name: ' + name + '\n' +
+    'Email: ' + email + '\n' +
+    'Message: ' + message
+  );
+  var mailtoLink = 'mailto:kaden@automateutah.com?subject=' + subject + '&body=' + body;
+
+  form.innerHTML = '<p style="text-align:center; font-weight:700; padding: 24px 0;">Thanks' + (name ? ', ' + name : '') + '. Your email app should open to send your message to Kaden. If it doesn\'t open, email kaden@automateutah.com directly.</p>';
+
+  window.location.href = mailtoLink;
+}
+
 // Mobile nav toggle
 (function () {
   var toggle = document.querySelector('.nav-toggle');

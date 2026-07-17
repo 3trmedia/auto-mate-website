@@ -1099,12 +1099,84 @@
     color: var(--ink);
   }
 
-  .form-field input:focus, .form-field select:focus {
+  .form-field input:focus, .form-field select:focus, .form-field textarea:focus {
     border-color: var(--accent);
     outline: none;
   }
 
+  .form-field textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1.5px solid var(--hairline);
+    font-family: inherit;
+    font-size: 15px;
+    background: var(--cream);
+    color: var(--ink);
+    resize: vertical;
+    min-height: 120px;
+  }
+
   .apply-box .btn { width: 100%; margin-top: 8px; }
+
+  /* STATS STRIP (pricing page) */
+  .stats-strip {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: 640px) {
+    .stats-strip { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .stat-item {
+    background: var(--white);
+    border: 1px solid var(--hairline);
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .stat-num {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: clamp(30px, 4vw, 38px);
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  /* SOLUTION DETAIL BLOCKS (solutions page) */
+  .solution-block {
+    display: flex;
+    gap: 20px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .solution-block:last-child { border-bottom: none; }
+
+  .solution-icon {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: var(--accent-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .solution-icon svg { width: 26px; height: 26px; color: var(--accent); }
+
+  .solution-block h3 { font-size: 20px; margin-bottom: 8px; }
+  .solution-block p { color: var(--muted); font-size: 15.5px; margin: 0; }
 
   .apply-note {
     text-align: center;
