@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automate Utah | Review &amp; Referral Requests</title>
+<meta name="description" content="Most people won't leave a review unless someone asks at the right moment. We ask right after the job wraps up, while the experience is still fresh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="wordmark">Automate <span>Utah</span></a>
+    <nav class="nav-links-desktop">
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-toggle">Solutions
+          <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="solutions.html">All Solutions</a>
+            <a href="instant-lead-response.html">Instant Lead Response</a>
+            <a href="lead-follow-up.html">Lead Follow-Up</a>
+            <a href="past-customer-outreach.html">Past Customer Outreach</a>
+            <a href="review-referral-requests.html">Review &amp; Referral Requests</a>
+          </div>
+        </div>
+      </div>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="#apply" class="btn btn-primary" onclick="trackEvent('nav_cta_click', {location: 'nav'})">See If You Qualify</a>
+    </nav>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </div>
+  <div class="nav-mobile-panel">
+    <div class="nav-mobile-group-label">Solutions</div>
+    <a href="solutions.html">All Solutions</a>
+    <a href="instant-lead-response.html">Instant Lead Response</a>
+    <a href="lead-follow-up.html">Lead Follow-Up</a>
+    <a href="past-customer-outreach.html">Past Customer Outreach</a>
+    <a href="review-referral-requests.html">Review &amp; Referral Requests</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="#apply" class="btn btn-primary" onclick="trackEvent('nav_cta_click', {location: 'nav_mobile'})">See If You Qualify</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="saas-hero section-cream">
+  <div class="wrap saas-hero-grid">
+    <div class="saas-hero-content fade-rise">
+      <span class="eyebrow">Review &amp; Referral Requests</span>
+      <h1>Happy Customers Become Your Best <span class="accent">Marketing</span>, Asked At The Right Moment</h1>
+      <p class="saas-hero-sub">Most people won't leave a review unless someone asks at the right moment. We ask right after the job wraps up, while the experience is still fresh, and make it easy for referrals to find their way back to you.</p>
+      <div class="hero-actions">
+        <a href="#apply" class="btn btn-primary" onclick="trackEvent('hero_cta_click', {button: 'see_if_you_qualify', page: 'review_referral_requests'})">See If You Qualify</a>
+        <a href="#how" class="btn btn-ghost" onclick="trackEvent('hero_cta_click', {button: 'see_how_it_works', page: 'review_referral_requests'})">See How It Works</a>
+      </div>
+      <div class="saas-trust-bullets">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Built for Utah County businesses</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>No new software to learn</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Founding rates available</span>
+      </div>
+    </div>
+    <div class="saas-hero-visual fade-rise">
+      <div class="blur-dot" style="width: 90px; height: 90px; top: -30px; right: 10%;"></div>
+      <div class="blur-dot" style="width: 50px; height: 50px; bottom: 10%; left: -20px;"></div>
+      <!-- Illustrative mockup, not a real product screenshot -->
+      <div class="mockup-frame">
+        <div class="mockup-titlebar">
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot is-accent"></div>
+          <span class="mockup-titlebar-label">Command Center &middot; This Month</span>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-stats">
+            <div class="mockup-stat">
+              <div class="mockup-stat-num">26</div>
+              <div class="mockup-stat-label">Requests Sent</div>
+            </div>
+            <div class="mockup-stat">
+              <div class="mockup-stat-num">14</div>
+              <div class="mockup-stat-label">Reviews Received</div>
+            </div>
+            <div class="mockup-stat">
+              <div class="mockup-stat-num">3</div>
+              <div class="mockup-stat-label">Referrals Routed</div>
+            </div>
+            <div class="mockup-stat">
+              <div class="mockup-stat-num">54%</div>
+              <div class="mockup-stat-label">Response Rate</div>
+            </div>
+          </div>
+          <div class="mockup-chart">
+            <div class="mockup-chart-label">Review Requests Sent, This Month</div>
+            <svg viewBox="0 0 300 60" preserveAspectRatio="none">
+              <polyline points="0,50 40,44 80,46 120,32 160,28 200,20 240,22 300,10" fill="none" stroke="#E14D1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            </svg>
+          </div>
+          <div class="mockup-activity">
+            <div class="mockup-activity-row"><span class="mockup-activity-dot"></span>Review request sent <span>&middot; "Jane D.", job completed</span></div>
+            <div class="mockup-activity-row"><span class="mockup-activity-dot"></span>New 5-star review <span>&middot; Google</span></div>
+            <div class="mockup-activity-row"><span class="mockup-activity-dot"></span>Referral routed <span>&middot; from "Marcus T."</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section class="section-cream">
+  <div class="wrap">
+    <div class="section-head fade-rise">
+      <span class="eyebrow">The Problem</span>
+      <h2>Great Work Doesn't Speak For Itself</h2>
+      <p>Most happy customers won't leave a review or send a referral unless someone actually asks them, at the right moment, in a way that's easy to act on. Without a system for it, that step just gets skipped.</p>
+    </div>
+    <div class="stats-strip fade-rise">
+      <div class="stat-item">
+        <div class="stat-num">Same Day</div>
+        <div class="stat-label">Every request goes out right after the job wraps up</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Extra steps for your customer, it's one simple tap</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Of happy customers get asked, not just the ones who remember</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="how" class="section-white">
+  <div class="wrap">
+    <div class="section-head fade-rise">
+      <span class="eyebrow">What's Included</span>
+      <h2>Everything Review &amp; Referral Requests Covers</h2>
+      <p>One piece of the front desk, built to turn happy customers into visible proof.</p>
+    </div>
+    <div class="grid-6">
+      <div class="leak-card fade-rise">
+        <div class="leak-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 16 14"></polyline></svg>
+        </div>
+        <h3>Perfectly Timed Requests</h3>
+        <p>Sent right after a job wraps up, while the experience is still fresh.</p>
+      </div>
+      <div class="leak-card fade-rise">
+        <div class="leak-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.9L21 9.6l-4.5 4.2 1.3 7.2L12 17.7 6.2 21l1.3-7.2L3 9.6l6.4-0.7L12 3z"></path></svg>
+        </div>
+        <h3>One-Tap Reviews</h3>
+        <p>A simple link makes it easy for customers to leave a review in seconds.</p>
+      </div>
+      <div class="leak-card fade-rise">
+        <div class="leak-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><path d="M7 13h3M7 17h3M14 13h3M14 17h3"></path></svg>
+        </div>
+        <h3>Routed to the Right Platform</h3>
+        <p>Requests point wherever matters most to your business, Google, Facebook, or elsewhere.</p>
+      </div>
+      <div class="leak-card fade-rise">
+        <div class="leak-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="9" r="3"></circle><circle cx="16" cy="9" r="3"></circle><path d="M2 20c0-3 2.5-5 6-5s6 2 6 5M10 20c0-3 2.5-5 6-5s6 2 6 5"></path></svg>
+        </div>
+        <h3>Referral Tracking</h3>
+        <p>When a happy customer sends someone your way, it gets tracked and routed back to you.</p>
+      </div>
+      <div class="leak-card fade-rise">
+        <div class="leak-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h14a2 2 0 012 2v7a2 2 0 01-2 2H9l-5 4V5z"></path></svg>
+        </div>
+        <h3>No Awkward Asking</h3>
+        <p>Your team never has to remember to ask for a review in person again.</p>
+      </div>
+      <div class="leak-card fade-rise">
+        <div class="leak-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 119.5 4a7 7 0 1010.5 10.5z"></path></svg>
+        </div>
+        <h3>Works With Every Job</h3>
+        <p>Every completed job triggers the same request, so nothing gets missed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT SECTION -->
+<section class="section-cream">
+  <div class="wrap split-grid">
+    <div class="fade-rise">
+      <!-- Illustrative mockup, not a real product screenshot -->
+      <div class="mockup-frame">
+        <div class="mockup-titlebar">
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot is-accent"></div>
+          <span class="mockup-titlebar-label">Recent Activity</span>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-activity">
+            <div class="mockup-activity-row"><span class="mockup-activity-dot"></span>Job completed <span>&middot; review request sent</span></div>
+            <div class="mockup-activity-row"><span class="mockup-activity-dot"></span>New 5-star review <span>&middot; Facebook</span></div>
+            <div class="mockup-activity-row"><span class="mockup-activity-dot"></span>Referral mentioned <span>&middot; "sent by a friend"</span></div>
+            <div class="mockup-activity-row"><span class="mockup-activity-dot"></span>Job completed <span>&middot; review request sent</span></div>
+            <div class="mockup-activity-row"><span class="mockup-activity-dot"></span>New 5-star review <span>&middot; Google</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="split-copy fade-rise">
+      <span class="eyebrow">Why It Matters</span>
+      <h2>Let Your Best Customers Do The Talking</h2>
+      <p>Reviews and referrals compound. Every job you do well becomes visible instead of invisible, and every happy customer becomes a chance for someone else to find you, without you having to remember to ask.</p>
+      <ul class="checklist">
+        <li><span class="dot"></span>Every completed job gets a review request, automatically</li>
+        <li><span class="dot"></span>Requests go out while the experience is still fresh</li>
+        <li><span class="dot"></span>Referrals get tracked instead of falling through the cracks</li>
+      </ul>
+      <div class="split-example">
+        A steady stream of fresh reviews doesn't just build trust with new leads, it also improves how easily your business shows up when someone searches for what you do.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section-white">
+  <div class="wrap">
+    <div class="section-head fade-rise">
+      <span class="eyebrow">What They Say</span>
+      <h2>Founding clients on review &amp; referral requests</h2>
+    </div>
+    <div class="testimonial-grid-3 fade-rise">
+      <!-- PLACEHOLDER TESTIMONIAL: replace with a real founding client quote -->
+      <div class="testimonial-card">
+        <p>"I used to forget to ask for reviews half the time. Now it just happens after every job."</p>
+        <div class="testimonial-card-byline">
+          <div class="avatar-circle">R</div>
+          <div>
+            <div class="testimonial-name">Founding Client</div>
+            <div class="testimonial-role">Real Estate</div>
+          </div>
+        </div>
+      </div>
+      <!-- PLACEHOLDER TESTIMONIAL: replace with a real founding client quote -->
+      <div class="testimonial-card">
+        <p>"Our review count more than doubled in a few months without me lifting a finger."</p>
+        <div class="testimonial-card-byline">
+          <div class="avatar-circle">W</div>
+          <div>
+            <div class="testimonial-name">Founding Client</div>
+            <div class="testimonial-role">Window Cleaning</div>
+          </div>
+        </div>
+      </div>
+      <!-- PLACEHOLDER TESTIMONIAL: replace with a real founding client quote -->
+      <div class="testimonial-card">
+        <p>"Referrals used to be word of mouth I couldn't track. Now I actually know where new clients come from."</p>
+        <div class="testimonial-card-byline">
+          <div class="avatar-circle">P</div>
+          <div>
+            <div class="testimonial-name">Founding Client</div>
+            <div class="testimonial-role">Pest Control</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section-cream" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="cta-band fade-rise">
+      <div class="cta-band-copy">
+        <span class="eyebrow">Ready When You Are</span>
+        <h2>Let Your Reputation Grow Itself</h2>
+        <p>60 seconds to apply. No pitch, no commitment. If it's a fit, Kaden reaches out within 1 business day.</p>
+      </div>
+      <div class="apply-box" id="apply">
+        <form id="apply-form" data-source="Review and Referral Requests Landing Page" onsubmit="handleApplySubmit(event)">
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-field">
+            <label for="industry">Industry</label>
+            <select id="industry" name="industry" required>
+              <option value="" disabled selected>Select your industry</option>
+              <option value="pest-control">Pest Control</option>
+              <option value="med-spa">Med Spa</option>
+              <option value="window-cleaning">Window Cleaning</option>
+              <option value="real-estate">Real Estate</option>
+              <option value="home-services">Home Services</option>
+              <option value="other">Other Service Business</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Continue</button>
+        </form>
+        <p class="apply-note">Applications reviewed within 1 business day &middot; Utah County</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="wordmark">Automate <span>Utah</span></div>
+        <p class="footer-desc">Answering and lead capture for Utah County service businesses. Every call answered, every quote chased, every job booked.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="pest-control.html">Pest Control</a></li>
+          <li><a href="med-spa.html">Med Spas</a></li>
+          <li><a href="window-cleaning.html">Window Cleaning</a></li>
+          <li><a href="real-estate.html">Real Estate Teams</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:kaden@automateutah.com">kaden@automateutah.com</a></li>
+          <li><a href="tel:+18014583118">(801) 458-3118</a></li>
+          <li>Orem, UT</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-legal-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <span>&middot;</span>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+      &copy; 2026 Automate Utah. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
