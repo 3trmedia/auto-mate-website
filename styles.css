@@ -17,16 +17,17 @@
   body {
     margin: 0;
     overflow-x: hidden;
-    font-family: 'Figtree', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     color: var(--ink);
     background: var(--cream);
     line-height: 1.6;
   }
 
   h1, h2, h3, h4 {
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
     letter-spacing: -0.02em;
+    line-height: 1.2;
     margin: 0;
   }
 
@@ -137,7 +138,7 @@
   }
 
   .wordmark {
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 800;
     font-size: 20px;
   }
@@ -426,19 +427,6 @@
     padding: 32px;
   }
 
-  .card-tagged {
-    border-left: 4px solid var(--accent);
-  }
-
-  .card-tag {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 14px;
-  }
-
   .card h3 {
     font-size: 19px;
     margin-bottom: 10px;
@@ -598,7 +586,7 @@
   .handle-badge-check svg { width: 16px; height: 16px; color: var(--white); }
 
   .handle-badge-num {
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 800;
     font-size: 22px;
     color: var(--white);
@@ -908,7 +896,7 @@
     padding: 24px 0;
     font-weight: 700;
     font-size: 17px;
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Outfit', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1008,7 +996,7 @@
   }
 
   .stat-num {
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 800;
     font-size: clamp(30px, 4vw, 38px);
     color: var(--accent);
@@ -1082,7 +1070,7 @@
   }
 
   .footer-col h4 {
-    font-family: 'Figtree', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1293,7 +1281,7 @@
   }
 
   .mockup-stat-num {
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 800;
     font-size: 17px;
     color: var(--ink);
